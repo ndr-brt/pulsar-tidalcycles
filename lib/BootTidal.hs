@@ -11,7 +11,7 @@ hSetEncoding stdout utf8
 
 :{
 tidal <- startMulti [
---    superdirtTarget {oLatency = 0.2, oAddress = "127.0.0.1", oPort = 57120},
+    superdirtTarget {oLatency = 0.2, oAddress = "127.0.0.1", oPort = 57120},
     superdirtTarget {oLatency = 0.2, oAddress = "127.0.0.1", oPort = 15151, oTimestamp = NoStamp}
   ] (defaultConfig {cFrameTimespan = 1/20})
 :}
